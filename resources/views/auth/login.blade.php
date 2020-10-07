@@ -22,8 +22,8 @@
 <div class="login-box">
   <div class="login-logo">
     <a href="#">
-      <img src="{{ asset('assets/img/city.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8; width: 100px; ">
+      <img src="{{ asset('assets/img/logo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8; width: 140px; ">
     </a>
   </div>
   <!-- /.login-logo -->
