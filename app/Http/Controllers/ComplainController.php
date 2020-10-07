@@ -97,7 +97,7 @@ class ComplainController extends Controller
         // $complains->picture2 = $request->picture2;
         // $complains->picture3 = $request->picture3;
         // $complains->picture4 = $request->picture4;
-        // $complains->status = $request->status;
+        $complains->status = $request->status;
         // $complains->resulation = $request->resulation;
         // $complains->complain_details = $request->complain_details;
         $complains->resulation = $request->resulation;
@@ -108,14 +108,12 @@ class ComplainController extends Controller
     public function delete_complain($id)
     {
         $complain = Complain::find($id);
-        $complain->delete();
-        return redirect()->back()->with('danger','Complain Deleted Successfully!');
-        // if($complain){
-        //     $complain->delete();
-        //     return response()->json('success',201);
-        // }else{
-        //     return response()->json('error',422);
-        // }
+        if($complain){
+            $complain->delete();
+                return redirect()->back()->with('danger','Complain Deleted Successfully!');
+        }else{
+                return redirect()->back()->with('danger','Complain Does not Deleted!');
+        }
     }
 
 }

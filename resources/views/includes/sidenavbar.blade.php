@@ -1,7 +1,7 @@
 <aside class="main-sidebar elevation-4 sidebar-light-teal">
     <!-- Brand Logo -->
     <a href="{{route('dashboard')}}" class="brand-link">
-      <img src="{{ asset('assets/dist/img/') }}" alt="Admin Logo" class="brand-image img-circle elevation-3"
+      <img src="{{ asset('assets/img/city.png') }}" alt="Admin Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">City Corporation</span>
     </a>

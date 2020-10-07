@@ -21,10 +21,10 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    {{-- <a href="#">
-      <img src="{{ asset('assets/dist/img/erstate-icon.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
-    </a> --}}
+    <a href="#">
+      <img src="{{ asset('assets/img/city.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8; width: 100px; ">
+    </a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
