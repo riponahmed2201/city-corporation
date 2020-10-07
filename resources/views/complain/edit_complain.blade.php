@@ -74,20 +74,19 @@
                 <div class="col-md-6">
                   <div class="form-group">
                       <label>Resulation</label>
-                        <textarea id="my-textarea" class="form-control" name="" rows="5">{{ $complain->resulation }}</textarea>
+                        <textarea id="my-textarea" class="form-control" name="resulation" rows="5">{{ $complain->resulation }}</textarea>
                       @if($errors->has('resulation'))
                         <strong class="text-danger">{{ $errors->first('resulation') }}</strong>
                       @endif
                   </div>
               </div>
 
-
                 <div class="col-md-6">
                   <div class="form-group">
                       <label>Status</label>
                           <select name="status" id="" class="form-control">
-                            <option {{$complain->status == 'open' ? 'selected' : '' }} value="open">open</option>
-                             <option {{$complain->status == 'close' ? 'selected' : '' }} value="close">close</option>
+                            <option {{$complain->status == '1' ? 'selected' : '' }} value="1">open</option>
+                             <option {{$complain->status == '0' ? 'selected' : '' }} value="0">close</option>
                           </select>
                       @if($errors->has('status'))
                         <strong class="text-danger">{{ $errors->first('status') }}</strong>
@@ -99,7 +98,7 @@
                 <!-- /.row -->
           </div>
             <div class="card-footer">
-                <button type="submit" class="btn btn-success ">Submit</button>
+                <button type="submit" class="btn btn-success ">Update</button>
                 <a href="{{ route('show_complain') }}" type="submit" class="btn btn-info">Back</a>
             </div>
         </form>

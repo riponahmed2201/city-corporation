@@ -21,14 +21,14 @@
               </p>
             </a>
           </li>
-{{-- 
+
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-list-alt text-green"></i>
               <p>
                All Category
               </p>
-            </a> --}}
+            </a>
           </li>
 
           <li class="nav-item has-treeview">
@@ -39,6 +39,64 @@
               </p>
             </a>
           </li>
+            <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <p>
+               Master Data
+              </p>
+            </a>
+          </li>
+            <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <p>
+               Category Type
+              </p>
+            </a>
+          </li>
+            <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <p>
+               All Department
+              </p>
+            </a>
+          </li>
+              <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <p>
+               All Users
+              </p>
+            </a>
+          </li>
+            <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <p>
+              Report
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <p>
+               Users Management
+              </p>
+            </a>
+          </li>
+
+            <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <p>
+              System Setting
+              </p>
+            </a>
+          </li>
+
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

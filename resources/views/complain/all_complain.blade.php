@@ -24,7 +24,7 @@
               <th>NID</th>
               <th>Phone</th>
               <th>Reviewer</th>
-              <th>Company Details</th>
+              <th>Complain Details</th>
               <th>Resulation</th>
               <th>Status</th>
               <th>Action</th>
