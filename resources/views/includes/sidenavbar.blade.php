@@ -3,7 +3,7 @@
     <a href="{{route('dashboard')}}" class="brand-link">
       <img src="{{ asset('assets/img/logo.png') }}" alt="Admin Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">City Corporation</span>
+      <span class="brand-text font-weight-light">DSCC</span>
     </a>
 
     <!-- Sidebar -->
@@ -23,15 +23,6 @@
           </li>
 
           <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
-              <p>
-               All Category
-              </p>
-            </a>
-          </li>
-
-          <li class="nav-item has-treeview">
             <a href="{{ route('show_complain') }}" class="nav-link {{ request()->is('/complain/show-complain') ? 'active' :''}}">
               <i class="nav-icon fas fa-project-diagram text-pink"></i>
               <p>
@@ -39,9 +30,19 @@
               </p>
             </a>
           </li>
+
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-list text-warning"></i>
+              <p>
+               All Category
+              </p>
+            </a>
+          </li>
+
             <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <i class="nav-icon fas fa-list-alt text-red"></i>
               <p>
                Master Data
               </p>
@@ -49,7 +50,7 @@
           </li>
             <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <i class="nav-icon fas fa-list text-green"></i>
               <p>
                Category Type
               </p>
@@ -57,7 +58,7 @@
           </li>
             <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <i class="nav-icon fas fa-building text-orange"></i>
               <p>
                All Department
               </p>
@@ -65,7 +66,7 @@
           </li>
               <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <i class="nav-icon fas fa-user text-red"></i>
               <p>
                All Users
               </p>
@@ -73,7 +74,7 @@
           </li>
             <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <i class="nav-icon fas fa-receipt text-brown"></i>
               <p>
               Report
               </p>
@@ -81,7 +82,7 @@
           </li>
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <i class="nav-icon fas fa-users text-blue"></i>
               <p>
                Users Management
               </p>
@@ -90,7 +91,7 @@
 
             <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-list-alt text-green"></i>
+              <i class="nav-icon fas fa-cogs text-warning"></i>
               <p>
               System Setting
               </p>

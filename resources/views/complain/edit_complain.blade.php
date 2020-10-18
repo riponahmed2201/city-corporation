@@ -24,7 +24,7 @@
                       <div class="form-group">
                         <label>Complain Category</label>
                           <select name="complain_category" id="" class="form-control" readonly>
-                            <option {{ $complain->complain_category ? 'selected' : '' }} value=""></option>
+                            <option {{ $complain->complain_category ? 'selected' : '' }} value="{{ $complain->complain_category }}">{{ $complain->complain_category }}</option>
                           </select>
                         @if($errors->has('complain_category'))
                             <strong class="text-danger">{{ $errors->first('complain_category') }}</strong>

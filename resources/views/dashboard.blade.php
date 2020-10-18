@@ -13,9 +13,9 @@
             <span class="info-box-icon bg-pink elevation-1"><i class="fas fa-project-diagram"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Complain1</span>
-              <span class="info-box-number" id="totalProject">
-                {{-- <small>%</small> --}}
+              <span class="info-box-text">Complain</span>
+              <span class="info-box-number">
+                <small>4</small>
               </span>
             </div>
             <!-- /.info-box-content -->
@@ -28,8 +28,9 @@
             <span class="info-box-icon bg-yellow elevation-1"><i class="fas fa-boxes"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Complain2</span>
-              <span class="info-box-number" id="totalProducts">
+              <span class="info-box-text">Complain</span>
+              <span class="info-box-number">
+                <small>4</small>
               </span>
             </div>
             <!-- /.info-box-content -->
@@ -43,12 +44,12 @@
 
         <div class="col-12 col-sm-6 col-md-3">
           <div class="info-box mb-3">
-            <span class="info-box-icon bg-green elevation-1"><i class="fas fa-dolly"></i></span>
+            <span class="info-box-icon bg-red elevation-1"><i class="fas fa-dolly"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Complain3</span>
-              <span class="info-box-number" id="totalSells">
-              
+              <span class="info-box-text">Complain</span>
+              <span class="info-box-number">
+                <small>4</small>
               </span>
             </div>
             <!-- /.info-box-content -->
@@ -61,9 +62,9 @@
             <span class="info-box-icon bg-green elevation-1"><i class="fas fa-dolly"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Complain4</span>
-              <span class="info-box-number" id="totalRequisitions">
-              
+              <span class="info-box-text">Complain</span>
+              <span class="info-box-number">
+                <small>4</small>
               </span>
             </div>
             <!-- /.info-box-content -->
@@ -78,41 +79,4 @@
       <!-- /.row -->
     </div><!--/. container-fluid -->
   </section>
-@endsection
-
-@section('custom_js')
-<script>
- $.ajax({url: "{{url('/total/project')}}", success: function(result){
-    $("#totalProject").html(result);
-      //var total_q = parseInt(result);
-      $.ajax({url: "{{url('/total/product')}}", success: function(result){
-              $("#totalProducts").html(result);
-
-          }});
-      $.ajax({url: "{{url('/total/sell')}}", success: function(result){
-            $("#totalSells").html(result);
-        }});
-      $.ajax({url: "{{url('/total/requisition')}}", success: function(result){
-            $("#totalRequisitions").html(result);
-      }});
-      $.ajax({url: "{{url('/total/order')}}", success: function(result){
-            $("#totalOrder").html(result);
-      }});
-      $.ajax({url: "{{url('/total/ledgerType')}}", success: function(result){
-            $("#totalLedgerType").html(result);
-      }});
-      $.ajax({url: "{{url('/total/ledgerGroup')}}", success: function(result){
-            $("#totalLedgerGroup").html(result);
-      }});
-      $.ajax({url: "{{url('/total/ledgerName')}}", success: function(result){
-            $("#totalLedgerName").html(result);
-      }});
-      $.ajax({url: "{{url('/total/bankorcash')}}", success: function(result){
-           $("#totalBankOrCash").html(result);
-      }});
-      $.ajax({url: "{{url('/total/user')}}", success: function(result){
-           $("#totalUser").html(result);
-      }});
-    }});
-</script>
 @endsection
