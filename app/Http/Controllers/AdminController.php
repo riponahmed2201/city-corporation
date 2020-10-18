@@ -4,12 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
     public function index()
     {
-        return view('dashboard');
+      $all_complains = DB::table('complains')->get();
+        return view('dashboard',compact('all_complains'));
     }
 
     public function showLoginForm()
