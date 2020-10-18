@@ -21,7 +21,6 @@
               <th>SL NO</th>
               <th>Complain Category</th>
               <th>Name</th>
-              <th>NID</th>
               <th>Phone</th>
               <th>Reviewer</th>
               <th>Complain Details</th>
@@ -36,12 +35,11 @@
                   <td>{{ $loop->iteration }}</td>
                   <td>{{ $complain->complain_category }}</td>
                   <td>{{ $complain->name }}</td>
-                  <td>{{ $complain->nid }}</td>
                   <td>{{ $complain->phone }}</td>
                   <td>{{ $complain->reviewer }}</td>
-                  <td>{{ $complain->company_details }}</td>
+                  <td>{{ $complain->complain_details }}</td>
                   <td>{{ $complain->resulation }}</td>
-                  <td>{{ $complain->status }}</td>
+                  <td>{{ $complain->status == '1' ? 'Open' : 'Close' }}</td>
                   <td>
                     <div style="width: 150px; display: block;">
                       <a href="{{ route('edit_complain',$complain->id) }}" class="btn btn-info btn-xs" title="Edit"><i class="far fa-edit"></i></a>
