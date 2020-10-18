@@ -63,7 +63,7 @@
 <script>
     $(document).ready(function() {
     $('#all-complain').DataTable( {
-        // scrollY:        '50vh',
+        scrollY:        '50vh',
         // scrollCollapse: true,
         // "responsive": true,
       "autoWidth": false,
